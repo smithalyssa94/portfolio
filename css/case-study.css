@@ -234,7 +234,195 @@
   max-width: 52em;
 }
 
+/* ---------- Process diagram (methodology hero graphic) ---------- */
+
+.process-diagram {
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(28px, 4vw, 44px);
+  --cut: 32px;
+}
+
+.process-diagram__head {
+  padding-bottom: 22px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(23, 20, 18, 0.12);
+}
+
+.process-diagram__head h3 {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2.1vw, 24px);
+  font-weight: 600;
+}
+
+.process-diagram__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.process-diagram__grid::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: var(--case-accent, var(--olive));
+  opacity: 0.3;
+}
+
+.process-diagram__col {
+  position: relative;
+  padding: 0 20px;
+}
+
+.process-diagram__col:first-child {
+  padding-left: 0;
+}
+
+.process-diagram__col:last-child {
+  padding-right: 0;
+}
+
+.process-diagram__col + .process-diagram__col {
+  border-left: 1px solid rgba(23, 20, 18, 0.1);
+}
+
+.process-diagram__num {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.4;
+  margin-bottom: 22px;
+}
+
+.process-diagram__col h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.process-diagram__when {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+
+.process-diagram__lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.process-diagram__lines li {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.78;
+  padding: 8px 0;
+  border-top: 1px solid rgba(23, 20, 18, 0.1);
+}
+
+.process-diagram__lines li:first-child {
+  border-top: none;
+}
+
+.process-diagram__lines-intro {
+  font-size: 12px;
+  opacity: 0.55;
+  margin-bottom: 4px;
+}
+
+.process-diagram__lens {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 7px 0;
+  border-top: 1px solid rgba(23, 20, 18, 0.1);
+  font-size: 13px;
+}
+
+.process-diagram__lens:first-of-type {
+  border-top: none;
+}
+
+.process-diagram__pip {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--case-accent, var(--olive));
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.process-diagram__lens-title {
+  font-weight: 600;
+}
+
+.process-diagram__lens-desc {
+  opacity: 0.6;
+}
+
+.process-diagram__handoff {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: rgba(23, 20, 18, 0.03);
+  border: 1px solid rgba(23, 20, 18, 0.08);
+}
+
+.process-diagram__handoff-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--case-accent, var(--olive));
+  margin-bottom: 6px;
+}
+
+.process-diagram__handoff-item {
+  font-size: 12px;
+  opacity: 0.65;
+  line-height: 1.35;
+}
+
 /* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .process-diagram__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-diagram__grid::before {
+    display: none;
+  }
+
+  .process-diagram__col {
+    padding: 24px 0;
+  }
+
+  .process-diagram__col:first-child {
+    padding-top: 0;
+  }
+
+  .process-diagram__col:last-child {
+    padding-bottom: 0;
+  }
+
+  .process-diagram__col + .process-diagram__col {
+    border-left: none;
+    border-top: 1px solid rgba(23, 20, 18, 0.12);
+  }
+}
 
 @media (max-width: 700px) {
   .case-rundown ul {
