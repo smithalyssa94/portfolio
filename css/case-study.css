@@ -45,7 +45,8 @@
   margin-top: 48px;
 }
 
-.case-hero__img img {
+.case-hero__img img,
+.case-hero__img svg {
   width: 100%;
   height: auto;
   display: block;
