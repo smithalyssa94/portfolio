@@ -52,6 +52,20 @@
   display: block;
 }
 
+/* Page-specific modifier: halves the hero image's effective height via a
+   fixed aspect ratio + object-fit, without touching .case-hero__img itself
+   (shared by every case study hero). */
+.case-hero__img--short {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.case-hero__img--short img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .case-img-placeholder {
   width: 100%;
   height: 100%;
