@@ -128,32 +128,34 @@
       <div class="testimonials__head">
         <p class="eyebrow">But Don't Just Take It From Me</p>
       </div>
-      <div class="testimonial-grid" id="testimonialGrid">
+      <div class="carousel" data-carousel>
+        <div class="carousel__track testimonial-grid">
 
-        <div class="testimonial card-cut">
-          <p class="testimonial__quote">"You are owning the strategy and creative, removing any friction and barriers between our team and the clients, and generally improving our working relationship between our team and theirs."</p>
-          <p class="testimonial__attr">Drew Patrick, Owner of Skidmore Studio</p>
+          <div class="testimonial card-cut">
+            <p class="testimonial__quote">"You are owning the strategy and creative, removing any friction and barriers between our team and the clients, and generally improving our working relationship between our team and theirs."</p>
+            <p class="testimonial__attr">Drew Patrick, Owner of Skidmore Studio</p>
+          </div>
+
+          <div class="testimonial card-cut">
+            <p class="testimonial__quote">"I've never seen a client light up around a messaging strategy the way Sean did in our last presentation."</p>
+            <p class="testimonial__attr">Shawn McConnell, Chief Creative Officer</p>
+          </div>
+
+          <div class="testimonial card-cut">
+            <p class="testimonial__quote">"The way your brain works, holistic and comprehensive, it's just amazing."</p>
+            <p class="testimonial__attr">Isabella Rice, Production</p>
+          </div>
+
+          <div class="testimonial card-cut">
+            <p class="testimonial__quote">"You really do run a tight ship, it makes being on your projects so easy and lovely."</p>
+            <p class="testimonial__attr">Sarah Johnson, Senior Designer</p>
+          </div>
+
         </div>
-
-        <div class="testimonial card-cut">
-          <p class="testimonial__quote">"I've never seen a client light up around a messaging strategy the way Sean did in our last presentation."</p>
-          <p class="testimonial__attr">Shawn McConnell, Chief Creative Officer</p>
+        <div class="carousel-nav testimonial-nav">
+          <button type="button" class="carousel-nav__btn" data-carousel-prev aria-label="Previous testimonial">←</button>
+          <button type="button" class="carousel-nav__btn" data-carousel-next aria-label="Next testimonial">→</button>
         </div>
-
-        <div class="testimonial card-cut">
-          <p class="testimonial__quote">"The way your brain works, holistic and comprehensive, it's just amazing."</p>
-          <p class="testimonial__attr">Isabella Rice, Production</p>
-        </div>
-
-        <div class="testimonial card-cut">
-          <p class="testimonial__quote">"You really do run a tight ship, it makes being on your projects so easy and lovely."</p>
-          <p class="testimonial__attr">Sarah Johnson, Senior Designer</p>
-        </div>
-
-      </div>
-      <div class="testimonial-nav">
-        <button type="button" class="testimonial-nav__btn" id="testimonialPrev" aria-label="Previous testimonial">←</button>
-        <button type="button" class="testimonial-nav__btn" id="testimonialNext" aria-label="Next testimonial">→</button>
       </div>
     </div>
   </section>
@@ -195,6 +197,7 @@
   </div>
 </div>
 
+<script src="js/carousel.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
