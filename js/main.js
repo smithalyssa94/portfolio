@@ -39,20 +39,6 @@ gateForm.addEventListener("submit", (e) => {
   }
 });
 
-const testimonialGrid = document.getElementById("testimonialGrid");
-const testimonialPrev = document.getElementById("testimonialPrev");
-const testimonialNext = document.getElementById("testimonialNext");
-
-function scrollTestimonials(direction) {
-  const card = testimonialGrid.querySelector(".testimonial");
-  const gap = parseFloat(getComputedStyle(testimonialGrid).gap) || 0;
-  const distance = (card.getBoundingClientRect().width + gap) * direction;
-  testimonialGrid.scrollBy({ left: distance, behavior: "smooth" });
-}
-
-testimonialPrev.addEventListener("click", () => scrollTestimonials(-1));
-testimonialNext.addEventListener("click", () => scrollTestimonials(1));
-
 const ruleRows = document.querySelectorAll(".rulelist__row");
 if (ruleRows.length) {
   const ruleObserver = new IntersectionObserver(
