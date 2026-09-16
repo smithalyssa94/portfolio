@@ -84,6 +84,26 @@
         <h3>Messaging Architecture</h3>
         <p>The updated packaging architecture stays true to the original while emphasizing what people look for on the shelf: flavor cues.</p>
         <div class="case-work__img"><img src="../images/projects/work/brownie-brittle-positioning.jpg" alt="Brownie Brittle seasonal and limited-edition packaging lineup"></div>
+
+        <div class="carousel" data-carousel data-carousel-lightbox>
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/brownie-brittle-research.jpg" alt="Consumer research showing word associations and design element resonance for the original Brownie Brittle package"></div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/brownie-brittle-tone.jpg" alt="Brownie Brittle brand guidelines tone slide: Clever, Colorful, Confident, with traits the brand avoids" loading="lazy"></div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/brownie-brittle-back-of-pack.jpg" alt="Three back-of-pack copy and headline options for Brownie Brittle" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button type="button" class="carousel-nav__btn" data-carousel-prev aria-label="Previous slide">←</button>
+            <div class="carousel-dots" data-carousel-dots></div>
+            <button type="button" class="carousel-nav__btn" data-carousel-next aria-label="Next slide">→</button>
+          </div>
+        </div>
+
         <div class="case-work__img"><img src="../images/projects/work/brownie-brittle-messaging.jpg" alt="Brownie Brittle billboard reading Whoa That's Crisp"></div>
       </div>
 
@@ -128,7 +148,15 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">←</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">→</button>
+  </div>
+
 </main>
 
+<script src="../js/carousel.js"></script>
 </body>
 </html>
