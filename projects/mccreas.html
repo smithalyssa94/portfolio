@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>McCrea's Candies — Alyssa Smith</title>
-<meta name="description" content="Built a brand around the moment, not the product. Best sales day ever within 12 months.">
+<meta name="description" content="Brought personality and taste appeal into the brand without changing the packaging. 2x previous sales high within 12 months.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,opsz,wght@0,12..96,400..800;1,12..96,400..800&family=Asap:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
       <span>ACD &amp; Brand Strategist</span>
     </div>
     <h1>McCrea's Candies</h1>
-    <div class="case-hero__img">
+    <div class="case-hero__img case-hero__img--short">
       <img src="../images/projects/mccreas-hero.jpg" alt="Hands unwrapping a McCrea's caramel poolside">
     </div>
   </header>
@@ -40,7 +40,7 @@
   <section class="block block--paper block--cut block--pad">
     <div class="wrap case-problem">
       <p class="case-section-label">The Problem</p>
-      <p>McCrea's makes exceptional caramels — small batch, real ingredients, the kind of product that sells itself once someone tastes it. But the brand didn't match the product.</p>
+      <p>McCrea's makes exceptional caramels—small batch, real ingredients, unique flavors. The kind of product that sells itself once someone tastes it. But the brand didn't match the product.</p>
       <p>The client had a warehouse full of simple, solid packaging waiting to be filled, so our challenge was to reinvent the brand without touching the packaging. The entire brand refresh had to happen through digital presence and marketing.</p>
     </div>
   </section>
@@ -77,19 +77,36 @@
       <div class="case-work__item">
         <h3>Brand Manifesto and Positioning</h3>
         <p>When revamping the brand, we wanted to better reflect the warm, colorful, kinda kooky personality of the team behind the candy. By invoking Martha Stewart and Indiana Jones as personality figureheads, we were marrying McCrea's sentimental, thoughtful side with the adventurous, unexpected nature of their candy flavors.</p>
-        <div class="case-work__img"><img src="../images/projects/work/mccreas-manifesto.jpg" alt="McCrea's brand personality anti-descriptors framework"></div>
+        <div class="carousel" data-carousel data-carousel-lightbox>
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/mccreas-positioning-01.jpg" alt="McCrea's brand deck slide citing a 2014 study linking the brain's taste-memory and time-and-place memory regions"></div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/mccreas-positioning-02.jpg" alt="McCrea's brand standards page with 'Savoring the Moment' headline over a beach photograph" loading="lazy"></div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__frame"><img src="../images/projects/work/mccreas-positioning-03.jpg" alt="McCrea's brand personality and tone-of-voice framework citing Martha Stewart and Indiana Jones as influences" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button type="button" class="carousel-nav__btn" data-carousel-prev aria-label="Previous slide">←</button>
+            <div class="carousel-dots" data-carousel-dots></div>
+            <button type="button" class="carousel-nav__btn" data-carousel-next aria-label="Next slide">→</button>
+          </div>
+        </div>
       </div>
 
       <div class="case-work__item">
         <h3>Ecommerce Email System</h3>
         <p>The emails had to carry the brand voice into someone's inbox without sounding like marketing. Emails and marketing connected caramels to a specific flavor and invoked a specific moment— seasonal, sensory, personal. The system was behavioral and seasonal, not batch-and-blast, so the voice showed up at the right time in the right context.</p>
-        <div class="case-work__img case-work__img--narrow"><img src="../images/projects/work/mccreas-email.jpg" alt="McCrea's ecommerce email design"></div>
+        <div class="case-work__img case-work__img--narrow"><img src="../images/projects/work/mccreas-email.jpg" alt="Grid of six McCrea's ecommerce email designs spanning Halloween, holiday, fall, and summer campaigns"></div>
       </div>
 
       <div class="case-work__item">
         <h3>Holiday Campaign</h3>
         <p>McCrea's had never run a seasonal campaign. The caramel advent calendar became the anchor — a product that's already about daily ritual and anticipation. Strategy, customer journey, funnel, social, and paid, all built from scratch against a tight budget.</p>
-        <div class="case-work__img"><img src="../images/projects/work/mccreas-holiday.jpg" alt="McCrea's caramel advent calendar paid social ad variations"></div>
+        <div class="case-work__img"><img src="../images/projects/work/mccreas-holiday.jpg" alt="McCrea's caramel advent calendar paid social carousel concepts and Google search ad mockups"></div>
       </div>
     </div>
   </section>
@@ -131,7 +148,15 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">←</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">→</button>
+  </div>
+
 </main>
 
+<script src="../js/carousel.js"></script>
 </body>
 </html>
